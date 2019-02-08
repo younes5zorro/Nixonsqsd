@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% block head %}
+        {{ dropzone.load_css() }}
+        {{ dropzone.style('border: 2px dashed #0087F7; margin: 10%; min-height: 400px;') }}
+        <title>DS</title>
+    {% endblock %}
+</head>
+<body>
+
+    {% block content %}
+    {{ dropzone.create(action_view='upload') }}
+    {{ dropzone.load_js() }}
+    {{ dropzone.config() }}
+    {% endblock %}
+
+
+</body>
+</html>

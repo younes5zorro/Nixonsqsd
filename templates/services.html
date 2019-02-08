@@ -1,0 +1,92 @@
+	<!DOCTYPE html>
+	<html lang="zxx" class="no-js">
+	<head>
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon-->
+		<link rel="shortcut icon" href="img/fav.png">
+		<!-- Author Meta -->
+		<meta name="author" content="codepixer">
+		<!-- Meta Description -->
+		<meta name="description" content="">
+		<!-- Meta Keyword -->
+		<meta name="keywords" content="">
+		<!-- meta character set -->
+		<meta charset="UTF-8">
+		<!-- Site Title -->
+		<title>Industry</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+			<!--
+			CSS
+			============================================= -->
+			<link rel="stylesheet" href="{{ url_for('static',filename='css/linearicons.css') }}">
+			<link rel="stylesheet" href="{{ url_for('static',filename='css/font-awesome.min.css') }}">
+			<link rel="stylesheet" href="{{ url_for('static',filename='css/bootstrap.css') }}">
+			<link rel="stylesheet" href="{{ url_for('static',filename='css/magnific-popup.css') }}">
+			<link rel="stylesheet" href="{{ url_for('static',filename='css/nice-select.css') }}">	
+			<link rel="stylesheet" href="{{ url_for('static',filename='css/hexagons.min.css') }}">							
+			<link rel="stylesheet" href="{{ url_for('static',filename='css/animate.min.css') }}">
+			<link rel="stylesheet" href="{{ url_for('static',filename='css/owl.carousel.css') }}">
+			<link rel="stylesheet" href="{{ url_for('static',filename='css/main.css') }}">
+		</head>
+		<body>	
+			
+
+			<!-- End banner Area -->	
+				
+			<!-- Start service Area -->
+			<section class="service-area section-gap" id="service">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-md-12 pb-30 header-text text-center">
+							<h1 class="mb-10">Result</h1>
+							<p>
+								Who are in extremely love with eco friendly system..
+							</p>
+						</div>
+					</div>
+					
+					
+					<!-- - <strong>{{ file_url }}</strong> -->
+					<div class="row">
+						{% for file_url in file_urls %}
+						<div class="col-lg-4">
+							<div class="single-service" style="text-align:center">
+								<div class="thumb">
+									<img src="{{ file_url.url}}" alt="">									
+								</div>
+								<h4>
+									<b>Pb : </b>{{ file_url.pb}} % | <b>Zn : </b>{{ file_url.zn}}% | <b>Cu : </b>{{ file_url.cu}}%
+								</h4>
+							</div>
+						</div>												
+						{% endfor %}
+					</div>
+
+
+				</div>	
+			</section>
+		
+
+			<script src="{{ url_for('static',filename='scripts/jquery-2.2.4.min.js') }}"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+			<script src="{{ url_for('static',filename='scripts/bootstrap.min.js') }}"></script>			
+			<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+  			<script src="{{ url_for('static',filename='scripts/easing.min.js') }}"></script>			
+			<script src="{{ url_for('static',filename='scripts/hoverIntent.js') }}"></script>
+			<script src="{{ url_for('static',filename='scripts/superfish.min.js') }}"></script>	
+			<script src="{{ url_for('static',filename='scripts/jquery.ajaxchimp.min.js') }}"></script>
+			<script src="{{ url_for('static',filename='scripts/jquery.magnific-popup.min.js') }}"></script>	
+			<script src="{{ url_for('static',filename='scripts/owl.carousel.min.js') }}"></script>	
+			<script src="{{ url_for('static',filename='scripts/hexagons.min.js') }}"></script>							
+			<script src="{{ url_for('static',filename='scripts/jquery.nice-select.min.js') }}"></script>	
+			<script src="{{ url_for('static',filename='scripts/jquery.counterup.min.js') }}"></script>
+			<script src="{{ url_for('static',filename='scripts/waypoints.min.js') }}"></script>							
+			<script src="{{ url_for('static',filename='scripts/mail-script.js') }}"></script>	
+			<script src="{{ url_for('static',filename='scripts/main.js') }}"></script>	
+		</body>
+	</html>
+
+
+

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% block head %}
+     
+        <title>page</title>
+    {% endblock %}
+</head>
+<body>
+    <h1>Hello Results Page!</h1>
+    <a href="{{ url_for('upload') }}">Back</a><p>
+    <ul>
+    {% for file_url in file_urls %}
+        <!-- - <strong>{{ file_url }}</strong> -->
+        
+        <li><img style="height: 150px" src="{{ file_url.url}}"> ZN : {{ file_url.zn}} ||| PB : {{ file_url.pb}}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
